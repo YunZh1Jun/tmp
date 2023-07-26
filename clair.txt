@@ -1,0 +1,739 @@
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| STATUS     | CVE SEVERITY                | PACKAGE NAME  | PACKAGE VERSION         | CVE DESCRIPTION                                              |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Medium CVE-2021-33560       | libgcrypt20   | 1.8.7-6                 | Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles     |
+|            |                             |               |                         | ElGamal encryption because it lacks exponent blinding        |
+|            |                             |               |                         | to address a side-channel attack against mpi_powm,           |
+|            |                             |               |                         | and the window size is not chosen appropriately.             |
+|            |                             |               |                         | This, for example, affects use of ElGamal in OpenPGP.        |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-33560   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Medium CVE-2021-40812       | libgd2        | 2.3.0-2                 | The GD Graphics Library (aka LibGD) through 2.3.2            |
+|            |                             |               |                         | has an out-of-bounds read because of the lack of             |
+|            |                             |               |                         | certain gdGetBuf and gdPutBuf return value checks.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-40812   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Medium CVE-2021-38115       | libgd2        | 2.3.0-2                 | read_header_tga in gd_tga.c in the GD Graphics               |
+|            |                             |               |                         | Library (aka LibGD) through 2.3.2 allows                     |
+|            |                             |               |                         | remote attackers to cause a denial of service                |
+|            |                             |               |                         | (out-of-bounds read) via a crafted TGA file.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-38115   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Medium CVE-2022-1304        | e2fsprogs     | 1.46.2-2                | An out-of-bounds read/write vulnerability was                |
+|            |                             |               |                         | found in e2fsprogs 1.46.5. This issue leads to               |
+|            |                             |               |                         | a segmentation fault and possibly arbitrary code             |
+|            |                             |               |                         | execution via a specially crafted filesystem.                |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-1304    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Medium CVE-2021-46822       | libjpeg-turbo | 1:2.0.6-4               | The PPM reader in libjpeg-turbo through 2.0.90               |
+|            |                             |               |                         | mishandles use of tjLoadImage for loading a 16-bit           |
+|            |                             |               |                         | binary PPM file into a grayscale buffer and loading          |
+|            |                             |               |                         | a 16-bit binary PGM file into an RGB buffer.                 |
+|            |                             |               |                         | This is related to a heap-based buffer overflow              |
+|            |                             |               |                         | in the get_word_rgb_row function in rdppm.c.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-46822   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Medium CVE-2020-16156       | perl          | 5.32.1-4+deb11u2        | CPAN 2.28 allows Signature Verification Bypass.              |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2020-16156   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Low CVE-2013-0337           | nginx         | 1.24.0-1~bullseye       | The default configuration of nginx, possibly                 |
+|            |                             |               |                         | 1.3.13 and earlier, uses world-readable permissions          |
+|            |                             |               |                         | for the (1) access.log and (2) error.log                     |
+|            |                             |               |                         | files, which allows local users to obtain                    |
+|            |                             |               |                         | sensitive information by reading the files.                  |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2013-0337    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Low CVE-2021-36087          | libsepol      | 3.1-1                   | The CIL compiler in SELinux 3.2 has a heap-based             |
+|            |                             |               |                         | buffer over-read in ebitmap_match_any (called                |
+|            |                             |               |                         | indirectly from cil_check_neverallow). This                  |
+|            |                             |               |                         | occurs because there is sometimes a lack of checks           |
+|            |                             |               |                         | for invalid statements in an optional block.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-36087   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Low CVE-2021-36086          | libsepol      | 3.1-1                   | The CIL compiler in SELinux 3.2 has a use-after-free         |
+|            |                             |               |                         | in cil_reset_classpermission (called from                    |
+|            |                             |               |                         | cil_reset_classperms_set and cil_reset_classperms_list).     |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-36086   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Low CVE-2021-36084          | libsepol      | 3.1-1                   | The CIL compiler in SELinux 3.2 has a                        |
+|            |                             |               |                         | use-after-free in __cil_verify_classperms                    |
+|            |                             |               |                         | (called from __cil_verify_classpermission                    |
+|            |                             |               |                         | and __cil_pre_verify_helper).                                |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-36084   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Low CVE-2016-2781           | coreutils     | 8.32-4                  | chroot in GNU coreutils, when used with --userspec,          |
+|            |                             |               |                         | allows local users to escape to the parent session           |
+|            |                             |               |                         | via a crafted TIOCSTI ioctl call, which pushes               |
+|            |                             |               |                         | characters to the terminal's input buffer.                   |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2016-2781    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Low CVE-2021-36085          | libsepol      | 3.1-1                   | The CIL compiler in SELinux 3.2 has a use-after-free         |
+|            |                             |               |                         | in __cil_verify_classperms (called from                      |
+|            |                             |               |                         | __verify_map_perm_classperms and hashtab_map).               |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-36085   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2013-4392    | systemd       | 247.3-7+deb11u2         | systemd, when updating file permissions, allows              |
+|            |                             |               |                         | local users to change the permissions and                    |
+|            |                             |               |                         | SELinux security contexts for arbitrary files                |
+|            |                             |               |                         | via a symlink attack on unspecified files.                   |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2013-4392    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2011-3389    | gnutls28      | 3.7.1-5+deb11u3         | The SSL protocol, as used in certain configurations          |
+|            |                             |               |                         | in Microsoft Windows and Microsoft Internet Explorer,        |
+|            |                             |               |                         | Mozilla Firefox, Google Chrome, Opera, and other             |
+|            |                             |               |                         | products, encrypts data by using CBC mode with chained       |
+|            |                             |               |                         | initialization vectors, which allows man-in-the-middle       |
+|            |                             |               |                         | attackers to obtain plaintext HTTP headers via a blockwise   |
+|            |                             |               |                         | chosen-boundary attack (BCBA) on an HTTPS session, in        |
+|            |                             |               |                         | conjunction with JavaScript code that uses (1) the HTML5     |
+|            |                             |               |                         | WebSocket API, (2) the Java URLConnection API, or (3)        |
+|            |                             |               |                         | the Silverlight WebClient API, aka a "BEAST" attack.         |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2011-3389    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2018-6829    | libgcrypt20   | 1.8.7-6                 | cipher/elgamal.c in Libgcrypt through 1.8.2, when            |
+|            |                             |               |                         | used to encrypt messages directly, improperly encodes        |
+|            |                             |               |                         | plaintexts, which allows attackers to obtain sensitive       |
+|            |                             |               |                         | information by reading ciphertext data (i.e., it does        |
+|            |                             |               |                         | not have semantic security in face of a ciphertext-only      |
+|            |                             |               |                         | attack). The Decisional Diffie-Hellman (DDH) assumption      |
+|            |                             |               |                         | does not hold for Libgcrypt's ElGamal implementation.        |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2018-6829    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-31782   | freetype      | 2.10.4+dfsg-1+deb11u1   | ftbench.c in FreeType Demo Programs through                  |
+|            |                             |               |                         | 2.12.1 has a heap-based buffer overflow.                     |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-31782   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-6129    | libpng1.6     | 1.6.37-3                | ** DISPUTED ** png_create_info_struct in png.c in            |
+|            |                             |               |                         | libpng 1.6.36 has a memory leak, as demonstrated             |
+|            |                             |               |                         | by pngcp. NOTE: a third party has stated "I don't            |
+|            |                             |               |                         | think it is libpng's job to free this buffer."               |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-6129    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2021-4214    | libpng1.6     | 1.6.37-3                | A heap overflow flaw was found in libpngs' pngimage.c        |
+|            |                             |               |                         | program. This flaw allows an attacker with local             |
+|            |                             |               |                         | network access to pass a specially crafted PNG file          |
+|            |                             |               |                         | to the pngimage utility, causing an application              |
+|            |                             |               |                         | to crash, leading to a denial of service.                    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-4214    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-17740   | openldap      | 2.4.57+dfsg-3+deb11u1   | contrib/slapd-modules/nops/nops.c in OpenLDAP                |
+|            |                             |               |                         | through 2.4.45, when both the nops module and the            |
+|            |                             |               |                         | memberof overlay are enabled, attempts to free               |
+|            |                             |               |                         | a buffer that was allocated on the stack, which              |
+|            |                             |               |                         | allows remote attackers to cause a denial of                 |
+|            |                             |               |                         | service (slapd crash) via a member MODDN operation.          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-17740   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-14159   | openldap      | 2.4.57+dfsg-3+deb11u1   | slapd in OpenLDAP 2.4.45 and earlier creates a               |
+|            |                             |               |                         | PID file after dropping privileges to a non-root             |
+|            |                             |               |                         | account, which might allow local users to kill               |
+|            |                             |               |                         | arbitrary processes by leveraging access to this             |
+|            |                             |               |                         | non-root account for PID file modification before            |
+|            |                             |               |                         | a root script executes a "kill `cat /pathname`"              |
+|            |                             |               |                         | command, as demonstrated by openldap-initscript.             |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-14159   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2015-3276    | openldap      | 2.4.57+dfsg-3+deb11u1   | The nss_parse_ciphers function in                            |
+|            |                             |               |                         | libraries/libldap/tls_m.c in OpenLDAP does not               |
+|            |                             |               |                         | properly parse OpenSSL-style multi-keyword mode              |
+|            |                             |               |                         | cipher strings, which might cause a weaker than              |
+|            |                             |               |                         | intended cipher to be used and allow remote attackers        |
+|            |                             |               |                         | to have unspecified impact via unknown vectors.              |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2015-3276    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2020-15719   | openldap      | 2.4.57+dfsg-3+deb11u1   | libldap in certain third-party OpenLDAP packages             |
+|            |                             |               |                         | has a certificate-validation flaw when the                   |
+|            |                             |               |                         | third-party package is asserting RFC6125 support.            |
+|            |                             |               |                         | It considers CN even when there is a non-matching            |
+|            |                             |               |                         | subjectAltName (SAN). This is fixed in, for example,         |
+|            |                             |               |                         | openldap-2.4.46-10.el8 in Red Hat Enterprise Linux.          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2020-15719   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2013-0340    | expat         | 2.2.10-2+deb11u5        | expat 2.1.0 and earlier does not properly handle             |
+|            |                             |               |                         | entities expansion unless an application developer uses      |
+|            |                             |               |                         | the XML_SetEntityDeclHandler function, which allows          |
+|            |                             |               |                         | remote attackers to cause a denial of service (resource      |
+|            |                             |               |                         | consumption), send HTTP requests to intranet servers,        |
+|            |                             |               |                         | or read arbitrary files via a crafted XML document, aka      |
+|            |                             |               |                         | an XML External Entity (XXE) issue. NOTE: it could be        |
+|            |                             |               |                         | argued that because expat already provides the ability to    |
+|            |                             |               |                         | disable external entity expansion, the responsibility for    |
+|            |                             |               |                         | resolving this issue lies with application developers;       |
+|            |                             |               |                         | according to this argument, this entry should be REJECTed,   |
+|            |                             |               |                         | and each affected application would need its own CVE.        |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2013-0340    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2011-4116    | perl          | 5.32.1-4+deb11u2        | _is_safe in the File::Temp module for                        |
+|            |                             |               |                         | Perl does not properly handle symlinks.                      |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2011-4116    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2013-4235    | shadow        | 1:4.8.1-1               | shadow: TOCTOU (time-of-check time-of-use) race              |
+|            |                             |               |                         | condition when copying and removing directory trees          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2013-4235    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-3219    | gnupg2        | 2.2.27-2+deb11u2        | GnuPG can be made to spin on a relatively small input        |
+|            |                             |               |                         | by (for example) crafting a public key with thousands of     |
+|            |                             |               |                         | signatures attached, compressed down to just a few KB.       |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-3219    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-31486   | perl          | 5.32.1-4+deb11u2        | HTTP::Tiny before 0.083, a Perl core module                  |
+|            |                             |               |                         | since 5.13.9 and available standalone on CPAN,               |
+|            |                             |               |                         | has an insecure default TLS configuration where              |
+|            |                             |               |                         | users must opt in to verify certificates.                    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-31486   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2018-5709    | krb5          | 1.18.3-6+deb11u3        | An issue was discovered in MIT Kerberos 5 (aka krb5)         |
+|            |                             |               |                         | through 1.16. There is a variable "dbentry->n_key_data"      |
+|            |                             |               |                         | in kadmin/dbutil/dump.c that can store 16-bit                |
+|            |                             |               |                         | data but unknowingly the developer has assigned              |
+|            |                             |               |                         | a "u4" variable to it, which is for 32-bit data.             |
+|            |                             |               |                         | An attacker can use this vulnerability to affect             |
+|            |                             |               |                         | other artifacts of the database as we know that a            |
+|            |                             |               |                         | Kerberos database dump file contains trusted data.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2018-5709    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2007-5686    | shadow        | 1:4.8.1-1               | initscripts in rPath Linux 1 sets insecure permissions       |
+|            |                             |               |                         | for the /var/log/btmp file, which allows local               |
+|            |                             |               |                         | users to obtain sensitive information regarding              |
+|            |                             |               |                         | authentication attempts.  NOTE: because sshd detects         |
+|            |                             |               |                         | the insecure permissions and does not log certain            |
+|            |                             |               |                         | events, this also prevents sshd from logging failed          |
+|            |                             |               |                         | authentication attempts by remote attackers.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2007-5686    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-18018   | coreutils     | 8.32-4                  | In GNU Coreutils through 8.29, chown-core.c in chown         |
+|            |                             |               |                         | and chgrp does not prevent replacement of a plain file       |
+|            |                             |               |                         | with a symlink during use of the POSIX "-R -L" options,      |
+|            |                             |               |                         | which allows local users to modify the ownership             |
+|            |                             |               |                         | of arbitrary files by leveraging a race condition.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-18018   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-9192    | glibc         | 2.31-13+deb11u6         | ** DISPUTED ** In the GNU C Library (aka glibc or            |
+|            |                             |               |                         | libc6) through 2.29, check_dst_limits_calc_pos_1             |
+|            |                             |               |                         | in posix/regexec.c has Uncontrolled Recursion, as            |
+|            |                             |               |                         | demonstrated by '(|)(\\1\\1)*' in grep, a different          |
+|            |                             |               |                         | issue than CVE-2018-20796. NOTE: the software                |
+|            |                             |               |                         | maintainer disputes that this is a vulnerability because     |
+|            |                             |               |                         | the behavior occurs only with a crafted pattern.             |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-9192    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-1010023 | glibc         | 2.31-13+deb11u6         | ** DISPUTED ** GNU Libc current is affected by: Re-mapping   |
+|            |                             |               |                         | current loaded library with malicious ELF file. The impact   |
+|            |                             |               |                         | is: In worst case attacker may evaluate privileges. The      |
+|            |                             |               |                         | component is: libld. The attack vector is: Attacker sends    |
+|            |                             |               |                         | 2 ELF files to victim and asks to run ldd on it. ldd         |
+|            |                             |               |                         | execute code. NOTE: Upstream comments indicate "this is      |
+|            |                             |               |                         | being treated as a non-security bug and no real threat."     |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-1010023 |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-1010022 | glibc         | 2.31-13+deb11u6         | ** DISPUTED ** GNU Libc current is affected by: Mitigation   |
+|            |                             |               |                         | bypass. The impact is: Attacker may bypass stack guard       |
+|            |                             |               |                         | protection. The component is: nptl. The attack vector        |
+|            |                             |               |                         | is: Exploit stack buffer overflow vulnerability and          |
+|            |                             |               |                         | use this bypass vulnerability to bypass stack guard.         |
+|            |                             |               |                         | NOTE: Upstream comments indicate "this is being              |
+|            |                             |               |                         | treated as a non-security bug and no real threat."           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-1010022 |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2018-20796   | glibc         | 2.31-13+deb11u6         | In the GNU C Library (aka glibc or libc6) through            |
+|            |                             |               |                         | 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c         |
+|            |                             |               |                         | has Uncontrolled Recursion, as demonstrated                  |
+|            |                             |               |                         | by '(\227|)(\\1\\1|t1|\\\2537)+' in grep.                    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2018-20796   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-1010024 | glibc         | 2.31-13+deb11u6         | ** DISPUTED ** GNU Libc current is affected by: Mitigation   |
+|            |                             |               |                         | bypass. The impact is: Attacker may bypass ASLR using        |
+|            |                             |               |                         | cache of thread stack and heap. The component is:            |
+|            |                             |               |                         | glibc. NOTE: Upstream comments indicate "this is being       |
+|            |                             |               |                         | treated as a non-security bug and no real threat."           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-1010024 |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2010-4756    | glibc         | 2.31-13+deb11u6         | The glob implementation in the GNU C Library (aka glibc      |
+|            |                             |               |                         | or libc6) allows remote authenticated users to cause a       |
+|            |                             |               |                         | denial of service (CPU and memory consumption) via crafted   |
+|            |                             |               |                         | glob expressions that do not match any pathnames, as         |
+|            |                             |               |                         | demonstrated by glob expressions in STAT commands to an      |
+|            |                             |               |                         | FTP daemon, a different vulnerability than CVE-2010-2632.    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2010-4756    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-1010025 | glibc         | 2.31-13+deb11u6         | ** DISPUTED ** GNU Libc current is affected by:              |
+|            |                             |               |                         | Mitigation bypass. The impact is: Attacker may guess         |
+|            |                             |               |                         | the heap addresses of pthread_created thread. The            |
+|            |                             |               |                         | component is: glibc. NOTE: the vendor's position             |
+|            |                             |               |                         | is "ASLR bypass itself is not a vulnerability."              |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-1010025 |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-19882   | shadow        | 1:4.8.1-1               | shadow 4.8, in certain circumstances affecting at            |
+|            |                             |               |                         | least Gentoo, Arch Linux, and Void Linux, allows local       |
+|            |                             |               |                         | users to obtain root access because setuid programs are      |
+|            |                             |               |                         | misconfigured. Specifically, this affects shadow 4.8         |
+|            |                             |               |                         | when compiled using --with-libpam but without explicitly     |
+|            |                             |               |                         | passing --disable-account-tools-setuid, and without a        |
+|            |                             |               |                         | PAM configuration suitable for use with setuid account       |
+|            |                             |               |                         | management tools. This combination leads to account          |
+|            |                             |               |                         | management tools (groupadd, groupdel, groupmod, useradd,     |
+|            |                             |               |                         | userdel, usermod) that can easily be used by unprivileged    |
+|            |                             |               |                         | local users to escalate privileges to root in multiple       |
+|            |                             |               |                         | ways. This issue became much more relevant in approximately  |
+|            |                             |               |                         | December 2019 when an unrelated bug was fixed (i.e.,         |
+|            |                             |               |                         | the chmod calls to suidusbins were fixed in the upstream     |
+|            |                             |               |                         | Makefile which is now included in the release version 4.8).  |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-19882   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2021-40145   | libgd2        | 2.3.0-2                 | ** DISPUTED ** gdImageGd2Ptr in gd_gd2.c in the GD           |
+|            |                             |               |                         | Graphics Library (aka LibGD) through 2.3.2 has a             |
+|            |                             |               |                         | double free. NOTE: the vendor's position is "The GD2         |
+|            |                             |               |                         | image format is a proprietary image format of libgd.         |
+|            |                             |               |                         | It has to be regarded as being obsolete, and should          |
+|            |                             |               |                         | only be used for development and testing purposes."          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-40145   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-0563    | util-linux    | 2.36.1-8+deb11u1        | A flaw was found in the util-linux chfn and chsh             |
+|            |                             |               |                         | utilities when compiled with Readline support. The           |
+|            |                             |               |                         | Readline library uses an "INPUTRC" environment variable      |
+|            |                             |               |                         | to get a path to the library config file. When the           |
+|            |                             |               |                         | library cannot parse the specified file, it prints           |
+|            |                             |               |                         | an error message containing data from the file. This         |
+|            |                             |               |                         | flaw allows an unprivileged user to read root-owned          |
+|            |                             |               |                         | files, potentially leading to privilege escalation.          |
+|            |                             |               |                         | This flaw affects util-linux versions prior to 2.37.4.       |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-0563    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2007-6755    | openssl       | 1.1.1n-0+deb11u5        | The NIST SP 800-90A default statement of the Dual Elliptic   |
+|            |                             |               |                         | Curve Deterministic Random Bit Generation (Dual_EC_DRBG)     |
+|            |                             |               |                         | algorithm contains point Q constants with a possible         |
+|            |                             |               |                         | relationship to certain "skeleton key" values, which         |
+|            |                             |               |                         | might allow context-dependent attackers to defeat            |
+|            |                             |               |                         | cryptographic protection mechanisms by leveraging knowledge  |
+|            |                             |               |                         | of those values.  NOTE: this is a preliminary CVE for        |
+|            |                             |               |                         | Dual_EC_DRBG; future research may provide additional         |
+|            |                             |               |                         | details about point Q and associated attacks, and could      |
+|            |                             |               |                         | potentially lead to a RECAST or REJECT of this CVE.          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2007-6755    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-7245    | pcre3         | 2:8.39-13               | Stack-based buffer overflow in the pcre32_copy_substring     |
+|            |                             |               |                         | function in pcre_get.c in libpcre1 in PCRE                   |
+|            |                             |               |                         | 8.40 allows remote attackers to cause a denial               |
+|            |                             |               |                         | of service (WRITE of size 4) or possibly have                |
+|            |                             |               |                         | unspecified other impact via a crafted file.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-7245    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-16231   | pcre3         | 2:8.39-13               | ** DISPUTED ** In PCRE 8.41, after compiling, a pcretest     |
+|            |                             |               |                         | load test PoC produces a crash overflow in the function      |
+|            |                             |               |                         | match() in pcre_exec.c because of a self-recursive           |
+|            |                             |               |                         | call. NOTE: third parties dispute the relevance of           |
+|            |                             |               |                         | this report, noting that there are options that can          |
+|            |                             |               |                         | be used to limit the amount of stack that is used.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-16231   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-20838   | pcre3         | 2:8.39-13               | libpcre in PCRE before 8.43 allows a subject                 |
+|            |                             |               |                         | buffer over-read in JIT when UTF is disabled,                |
+|            |                             |               |                         | and \X or \R has more than one fixed                         |
+|            |                             |               |                         | quantifier, a related issue to CVE-2019-20454.               |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-20838   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-11164   | pcre3         | 2:8.39-13               | In PCRE 8.41, the OP_KETRMAX feature in the match function   |
+|            |                             |               |                         | in pcre_exec.c allows stack exhaustion (uncontrolled         |
+|            |                             |               |                         | recursion) when processing a crafted regular expression.     |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-11164   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-7246    | pcre3         | 2:8.39-13               | Stack-based buffer overflow in the pcre32_copy_substring     |
+|            |                             |               |                         | function in pcre_get.c in libpcre1 in PCRE 8.40              |
+|            |                             |               |                         | allows remote attackers to cause a denial of                 |
+|            |                             |               |                         | service (WRITE of size 268) or possibly have                 |
+|            |                             |               |                         | unspecified other impact via a crafted file.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-7246    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2005-2541    | tar           | 1.34+dfsg-1             | Tar 1.15.1 does not properly warn the user when              |
+|            |                             |               |                         | extracting setuid or setgid files, which may allow           |
+|            |                             |               |                         | local users or remote attackers to gain privileges.          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2005-2541    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2010-0928    | openssl       | 1.1.1n-0+deb11u5        | OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the      |
+|            |                             |               |                         | Xilinx Virtex-II Pro FPGA uses a Fixed Width Exponentiation  |
+|            |                             |               |                         | (FWE) algorithm for certain signature calculations, and does |
+|            |                             |               |                         | not verify the signature before providing it to a caller,    |
+|            |                             |               |                         | which makes it easier for physically proximate attackers     |
+|            |                             |               |                         | to determine the private key via a modified supply voltage   |
+|            |                             |               |                         | for the microprocessor, related to a "fault-based attack."   |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2010-0928    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2019-8457    | db5.3         | 5.3.28+dfsg1-0.8        | SQLite3 from 3.6.0 to and including 3.27.2 is                |
+|            |                             |               |                         | vulnerable to heap out-of-bound read in the rtreenode()      |
+|            |                             |               |                         | function when handling invalid rtree tables.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2019-8457    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2020-36309   | nginx         | 1.24.0-1~bullseye       | ngx_http_lua_module (aka lua-nginx-module) before 0.10.16 in |
+|            |                             |               |                         | OpenResty allows unsafe characters in an argument when using |
+|            |                             |               |                         | the API to mutate a URI, or a request or response header.    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2020-36309   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-23914   | curl          | 7.74.0-1.3+deb11u7      | A cleartext transmission of sensitive information            |
+|            |                             |               |                         | vulnerability exists in curl <v7.88.0 that could cause       |
+|            |                             |               |                         | HSTS functionality fail when multiple URLs are requested     |
+|            |                             |               |                         | serially. Using its HSTS support, curl can be instructed     |
+|            |                             |               |                         | to use HTTPS instead of usingan insecure clear-text HTTP     |
+|            |                             |               |                         | step even when HTTP is provided in the URL. ThisHSTS         |
+|            |                             |               |                         | mechanism would however surprisingly be ignored by           |
+|            |                             |               |                         | subsequent transferswhen done on the same command line       |
+|            |                             |               |                         | because the state would not be properlycarried on.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-23914   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2009-4487    | nginx         | 1.24.0-1~bullseye       | nginx 0.7.64 writes data to a log file without sanitizing    |
+|            |                             |               |                         | non-printable characters, which might allow remote           |
+|            |                             |               |                         | attackers to modify a window's title, or possibly execute    |
+|            |                             |               |                         | arbitrary commands or overwrite files, via an HTTP request   |
+|            |                             |               |                         | containing an escape sequence for a terminal emulator.       |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2009-4487    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-23915   | curl          | 7.74.0-1.3+deb11u7      | A cleartext transmission of sensitive information            |
+|            |                             |               |                         | vulnerability exists in curl <v7.88.0 that could cause HSTS  |
+|            |                             |               |                         | functionality to behave incorrectly when multiple URLs are   |
+|            |                             |               |                         | requested in parallel. Using its HSTS support, curl can      |
+|            |                             |               |                         | be instructed to use HTTPS instead of using an insecure      |
+|            |                             |               |                         | clear-text HTTP step even when HTTP is provided in the       |
+|            |                             |               |                         | URL. This HSTS mechanism would however surprisingly fail     |
+|            |                             |               |                         | when multiple transfers are done in parallel as the HSTS     |
+|            |                             |               |                         | cache file gets overwritten by the most recentlycompleted    |
+|            |                             |               |                         | transfer. A later HTTP-only transfer to the earlier host     |
+|            |                             |               |                         | name would then *not* get upgraded properly to HSTS.         |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-23915   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-9937    | jbigkit       | 2.1-3.1                 | In LibTIFF 4.0.8, there is a memory malloc failure           |
+|            |                             |               |                         | in tif_jbig.c. A crafted TIFF document can lead to an        |
+|            |                             |               |                         | abort resulting in a remote denial of service attack.        |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-9937    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2015-9019    | libxslt       | 1.1.34-4+deb11u1        | In libxslt 1.1.29 and earlier, the EXSLT math.random         |
+|            |                             |               |                         | function was not initialized with a random                   |
+|            |                             |               |                         | seed during startup, which could cause usage of              |
+|            |                             |               |                         | this function to produce predictable outputs.                |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2015-9019    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-28320   | curl          | 7.74.0-1.3+deb11u7      | A denial of service vulnerability exists in curl <v8.1.0     |
+|            |                             |               |                         | in the way libcurl provides several different backends       |
+|            |                             |               |                         | for resolving host names, selected at build time. If it      |
+|            |                             |               |                         | is built to use the synchronous resolver, it allows name     |
+|            |                             |               |                         | resolves to time-out slow operations using `alarm()` and     |
+|            |                             |               |                         | `siglongjmp()`. When doing this, libcurl used a global       |
+|            |                             |               |                         | buffer that was not mutex protected and a multi-threaded     |
+|            |                             |               |                         | application might therefore crash or otherwise misbehave.    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-28320   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-31438   | systemd       | 247.3-7+deb11u2         | ** DISPUTED ** An issue was discovered in systemd            |
+|            |                             |               |                         | 253. An attacker can truncate a sealed log file              |
+|            |                             |               |                         | and then resume log sealing such that checking the           |
+|            |                             |               |                         | integrity shows no error, despite modifications.             |
+|            |                             |               |                         | NOTE: the vendor reportedly sent "a reply denying that       |
+|            |                             |               |                         | any of the finding was a security vulnerability."            |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-31438   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2021-22922   | curl          | 7.74.0-1.3+deb11u7      | When curl is instructed to download content using the        |
+|            |                             |               |                         | metalink feature, thecontents is verified against a hash     |
+|            |                             |               |                         | provided in the metalink XML file.The metalink XML file      |
+|            |                             |               |                         | points out to the client how to get the same contentfrom     |
+|            |                             |               |                         | a set of different URLs, potentially hosted by different     |
+|            |                             |               |                         | servers and theclient can then download the file from one    |
+|            |                             |               |                         | or several of them. In a serial orparallel manner.If one     |
+|            |                             |               |                         | of the servers hosting the contents has been breached and    |
+|            |                             |               |                         | the contentsof the specific file on that server is replaced  |
+|            |                             |               |                         | with a modified payload, curlshould detect this when the     |
+|            |                             |               |                         | hash of the file mismatches after a completeddownload.       |
+|            |                             |               |                         | It should remove the contents and instead try getting the    |
+|            |                             |               |                         | contentsfrom another URL. This is not done, and instead      |
+|            |                             |               |                         | such a hash mismatch is onlymentioned in text and the        |
+|            |                             |               |                         | potentially malicious content is kept in the file ondisk.    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-22922   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-43551   | curl          | 7.74.0-1.3+deb11u7      | A vulnerability exists in curl <7.87.0 HSTS check that       |
+|            |                             |               |                         | could be bypassed to trick it to keep using HTTP. Using      |
+|            |                             |               |                         | its HSTS support, curl can be instructed to use HTTPS        |
+|            |                             |               |                         | instead of using an insecure clear-text HTTP step even       |
+|            |                             |               |                         | when HTTP is provided in the URL. However, the HSTS          |
+|            |                             |               |                         | mechanism could be bypassed if the host name in the          |
+|            |                             |               |                         | given URL first uses IDN characters that get replaced to     |
+|            |                             |               |                         | ASCII counterparts as part of the IDN conversion. Like       |
+|            |                             |               |                         | using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP)     |
+|            |                             |               |                         | instead of the common ASCII full stop (U+002E) `.`. Then     |
+|            |                             |               |                         | in a subsequent request, it does not detect the HSTS         |
+|            |                             |               |                         | state and makes a clear text transfer. Because it would      |
+|            |                             |               |                         | store the info IDN encoded but look for it IDN decoded.      |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-43551   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2021-22923   | curl          | 7.74.0-1.3+deb11u7      | When curl is instructed to get content using the metalink    |
+|            |                             |               |                         | feature, and a user name and password are used to            |
+|            |                             |               |                         | download the metalink XML file, those same credentials       |
+|            |                             |               |                         | are then subsequently passed on to each of the servers       |
+|            |                             |               |                         | from which curl will download or try to download the         |
+|            |                             |               |                         | contents from. Often contrary to the user's expectations     |
+|            |                             |               |                         | and intentions and without telling the user it happened.     |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2021-22923   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-42916   | curl          | 7.74.0-1.3+deb11u7      | In curl before 7.86.0, the HSTS check could be bypassed      |
+|            |                             |               |                         | to trick it into staying with HTTP. Using its HSTS           |
+|            |                             |               |                         | support, curl can be instructed to use HTTPS directly        |
+|            |                             |               |                         | (instead of using an insecure cleartext HTTP step)           |
+|            |                             |               |                         | even when HTTP is provided in the URL. This mechanism        |
+|            |                             |               |                         | could be bypassed if the host name in the given URL          |
+|            |                             |               |                         | uses IDN characters that get replaced with ASCII             |
+|            |                             |               |                         | counterparts as part of the IDN conversion, e.g., using      |
+|            |                             |               |                         | the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP)           |
+|            |                             |               |                         | instead of the common ASCII full stop of U+002E (.).         |
+|            |                             |               |                         | The earliest affected version is 7.77.0 2021-05-26.          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-42916   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-4899    | libzstd       | 1.4.8+dfsg-2.1          | A vulnerability was found in zstd v1.4.10, where             |
+|            |                             |               |                         | an attacker can supply empty string as an argument           |
+|            |                             |               |                         | to the command line tool to cause buffer overrun.            |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-4899    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-9117    | tiff          | 4.2.0-1+deb11u4         | In LibTIFF 4.0.7, the program processes BMP images           |
+|            |                             |               |                         | without verifying that biWidth and biHeight in the           |
+|            |                             |               |                         | bitmap-information header match the actual input,            |
+|            |                             |               |                         | leading to a heap-based buffer over-read in bmp2tiff.        |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-9117    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-3164    | tiff          | 4.2.0-1+deb11u4         |   https://security-tracker.debian.org/tracker/CVE-2023-3164  |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2018-10126   | tiff          | 4.2.0-1+deb11u4         | LibTIFF 4.0.9 has a NULL pointer dereference                 |
+|            |                             |               |                         | in the jpeg_fdct_16x16 function in jfdctint.c.               |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2018-10126   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-1056    | tiff          | 4.2.0-1+deb11u4         | Out-of-bounds Read error in tiffcrop in libtiff 4.3.0        |
+|            |                             |               |                         | allows attackers to cause a denial-of-service via a          |
+|            |                             |               |                         | crafted tiff file. For users that compile libtiff from       |
+|            |                             |               |                         | sources, the fix is available with commit 46dc8fcd.          |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-1056    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-30775   | tiff          | 4.2.0-1+deb11u4         | A vulnerability was found in the libtiff library.            |
+|            |                             |               |                         | This security flaw causes a heap buffer overflow             |
+|            |                             |               |                         | in extractContigSamples32bits, tiffcrop.c.                   |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-30775   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-31439   | systemd       | 247.3-7+deb11u2         | ** DISPUTED ** An issue was discovered in systemd 253.       |
+|            |                             |               |                         | An attacker can modify the contents of past events in a      |
+|            |                             |               |                         | sealed log file and then adjust the file such that checking  |
+|            |                             |               |                         | the integrity shows no error, despite modifications.         |
+|            |                             |               |                         | NOTE: the vendor reportedly sent "a reply denying that       |
+|            |                             |               |                         | any of the finding was a security vulnerability."            |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-31439   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2020-13529   | systemd       | 247.3-7+deb11u2         | An exploitable denial-of-service vulnerability exists in     |
+|            |                             |               |                         | Systemd 245. A specially crafted DHCP FORCERENEW packet can  |
+|            |                             |               |                         | cause a server running the DHCP client to be vulnerable to   |
+|            |                             |               |                         | a DHCP ACK spoofing attack. An attacker can forge a pair of  |
+|            |                             |               |                         | FORCERENEW and DCHP ACK packets to reconfigure the server.   |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2020-13529   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-17973   | tiff          | 4.2.0-1+deb11u4         | ** DISPUTED ** In LibTIFF 4.0.8, there is a                  |
+|            |                             |               |                         | heap-based use-after-free in the t2p_writeproc               |
+|            |                             |               |                         | function in tiff2pdf.c. NOTE: there is a third-party         |
+|            |                             |               |                         | report of inability to reproduce this issue.                 |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-17973   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-1210    | tiff          | 4.2.0-1+deb11u4         | A vulnerability classified as problematic was found in       |
+|            |                             |               |                         | LibTIFF 4.3.0. Affected by this vulnerability is the         |
+|            |                             |               |                         | TIFF File Handler of tiff2ps. Opening a malicious file       |
+|            |                             |               |                         | leads to a denial of service. The attack can be launched     |
+|            |                             |               |                         | remotely but requires user interaction. The exploit          |
+|            |                             |               |                         | has been disclosed to the public and may be used.            |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-1210    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-31437   | systemd       | 247.3-7+deb11u2         | ** DISPUTED ** An issue was discovered in systemd 253.       |
+|            |                             |               |                         | An attacker can modify a sealed log file such that, in       |
+|            |                             |               |                         | some views, not all existing and sealed log messages are     |
+|            |                             |               |                         | displayed. NOTE: the vendor reportedly sent "a reply denying |
+|            |                             |               |                         | that any of the finding was a security vulnerability."       |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-31437   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-16232   | tiff          | 4.2.0-1+deb11u4         | ** DISPUTED ** LibTIFF 4.0.8 has multiple memory leak        |
+|            |                             |               |                         | vulnerabilities, which allow attackers to cause a            |
+|            |                             |               |                         | denial of service (memory consumption), as demonstrated      |
+|            |                             |               |                         | by tif_open.c, tif_lzw.c, and tif_aux.c. NOTE:               |
+|            |                             |               |                         | Third parties were unable to reproduce the issue.            |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-16232   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-3715    | bash          | 5.1-2+deb11u1           | A flaw was found in the bash package, where a heap-buffer    |
+|            |                             |               |                         | overflow can occur in valid parameter_transform.             |
+|            |                             |               |                         | This issue may lead to memory problems.                      |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-3715    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2023-1916    | tiff          | 4.2.0-1+deb11u4         | A flaw was found in tiffcrop, a program distributed          |
+|            |                             |               |                         | by the libtiff package. A specially crafted tiff             |
+|            |                             |               |                         | file can lead to an out-of-bounds read in the                |
+|            |                             |               |                         | extractImageSection function in tools/tiffcrop.c,            |
+|            |                             |               |                         | resulting in a denial of service and limited information     |
+|            |                             |               |                         | disclosure. This issue affects libtiff versions 4.x.         |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-1916    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2017-5563    | tiff          | 4.2.0-1+deb11u4         | LibTIFF version 4.0.7 is vulnerable to a heap-based          |
+|            |                             |               |                         | buffer over-read in tif_lzw.c resulting in DoS or code       |
+|            |                             |               |                         | execution via a crafted bmp image to tools/bmp2tiff.         |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2017-5563    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2014-8130    | tiff          | 4.2.0-1+deb11u4         | The _TIFFmalloc function in tif_unix.c in LibTIFF            |
+|            |                             |               |                         | 4.0.3 does not reject a zero size, which allows remote       |
+|            |                             |               |                         | attackers to cause a denial of service (divide-by-zero       |
+|            |                             |               |                         | error and application crash) via a crafted TIFF image        |
+|            |                             |               |                         | that is mishandled by the TIFFWriteScanline function         |
+|            |                             |               |                         | in tif_write.c, as demonstrated by tiffdither.               |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2014-8130    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2022-48303   | tar           | 1.34+dfsg-1             | GNU Tar through 1.34 has a one-byte out-of-bounds            |
+|            |                             |               |                         | read that results in use of uninitialized memory for         |
+|            |                             |               |                         | a conditional jump. Exploitation to change the flow          |
+|            |                             |               |                         | of control has not been demonstrated. The issue occurs       |
+|            |                             |               |                         | in from_header in list.c via a V7 archive in which           |
+|            |                             |               |                         | mtime has approximately 11 whitespace characters.            |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2022-48303   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Negligible CVE-2011-3374    | apt           | 2.2.4                   | It was found that apt-key in apt, all versions, do not       |
+|            |                             |               |                         | correctly validate gpg keys with the master keyring,         |
+|            |                             |               |                         | leading to a potential man-in-the-middle attack.             |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2011-3374    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-2731       | tiff          | 4.2.0-1+deb11u4         | A NULL pointer dereference flaw was found in Libtiff's       |
+|            |                             |               |                         | LZWDecode() function in the libtiff/tif_lzw.c file.          |
+|            |                             |               |                         | This flaw allows a local attacker to craft specific          |
+|            |                             |               |                         | input data that can cause the program to dereference         |
+|            |                             |               |                         | a NULL pointer when decompressing a TIFF format file,        |
+|            |                             |               |                         | resulting in a program crash or denial of service.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-2731    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-3316       | tiff          | 4.2.0-1+deb11u4         | A NULL pointer dereference in TIFFClose() is caused          |
+|            |                             |               |                         | by a failure to open an output file (non-existent            |
+|            |                             |               |                         | path or a path that requires permissions                     |
+|            |                             |               |                         | like /dev/null) while specifying zones.                      |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-3316    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-30774      | tiff          | 4.2.0-1+deb11u4         | A vulnerability was found in the libtiff library.            |
+|            |                             |               |                         | This flaw causes a heap buffer overflow issue via the        |
+|            |                             |               |                         | TIFFTAG_INKNAMES and TIFFTAG_NUMBEROFINKS values.            |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-30774   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-30086      | tiff          | 4.2.0-1+deb11u4         | Buffer Overflow vulnerability found in Libtiff               |
+|            |                             |               |                         | V.4.0.7 allows a local attacker to cause a denial            |
+|            |                             |               |                         | of service via the tiffcp function in tiffcp.c.              |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-30086   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-28321      | curl          | 7.74.0-1.3+deb11u7      | An improper certificate validation vulnerability exists in   |
+|            |                             |               |                         | curl <v8.1.0 in the way it supports matching of wildcard     |
+|            |                             |               |                         | patterns when listed as "Subject Alternative Name" in TLS    |
+|            |                             |               |                         | server certificates. curl can be built to use its own name   |
+|            |                             |               |                         | matching function for TLS rather than one provided by a      |
+|            |                             |               |                         | TLS library. This private wildcard matching function would   |
+|            |                             |               |                         | match IDN (International Domain Name) hosts incorrectly      |
+|            |                             |               |                         | and could as a result accept patterns that otherwise         |
+|            |                             |               |                         | should mismatch. IDN hostnames are converted to puny         |
+|            |                             |               |                         | code before used for certificate checks. Puny coded names    |
+|            |                             |               |                         | always start with `xn--` and should not be allowed to        |
+|            |                             |               |                         | pattern match, but the wildcard check in curl could still    |
+|            |                             |               |                         | check for `x*`, which would match even though the IDN name   |
+|            |                             |               |                         | most likely contained nothing even resembling an `x`.        |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-28321   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-27534      | curl          | 7.74.0-1.3+deb11u7      | A path traversal vulnerability exists in curl <8.0.0         |
+|            |                             |               |                         | SFTP implementation causes the tilde (~) character to be     |
+|            |                             |               |                         | wrongly replaced when used as a prefix in the first path     |
+|            |                             |               |                         | element, in addition to its intended use as the first        |
+|            |                             |               |                         | element to indicate a path relative to the user's home       |
+|            |                             |               |                         | directory. Attackers can exploit this flaw to bypass         |
+|            |                             |               |                         | filtering or execute arbitrary code by crafting a path like  |
+|            |                             |               |                         | /~2/foo while accessing a server with a specific user.       |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-27534   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-28322      | curl          | 7.74.0-1.3+deb11u7      | An information disclosure vulnerability exists in curl       |
+|            |                             |               |                         | <v8.1.0 when doing HTTP(S) transfers, libcurl might          |
+|            |                             |               |                         | erroneously use the read callback (`CURLOPT_READFUNCTION`)   |
+|            |                             |               |                         | to ask for data to send, even when the `CURLOPT_POSTFIELDS`  |
+|            |                             |               |                         | option has been set, if the same handle previously           |
+|            |                             |               |                         | wasused to issue a `PUT` request which used that callback.   |
+|            |                             |               |                         | This flaw may surprise the application and cause it          |
+|            |                             |               |                         | to misbehave and either send off the wrong data or use       |
+|            |                             |               |                         | memory after free or similar in the second transfer.         |
+|            |                             |               |                         | The problem exists in the logic for a reused handle when     |
+|            |                             |               |                         | it is (expected to be) changed from a PUT to a POST.         |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-28322   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-27533      | curl          | 7.74.0-1.3+deb11u7      | A vulnerability in input validation exists in curl <8.0      |
+|            |                             |               |                         | during communication using the TELNET protocol may allow     |
+|            |                             |               |                         | an attacker to pass on maliciously crafted user name         |
+|            |                             |               |                         | and "telnet options" during server negotiation. The          |
+|            |                             |               |                         | lack of proper input scrubbing allows an attacker to         |
+|            |                             |               |                         | send content or perform option negotiation without the       |
+|            |                             |               |                         | application's intent. This vulnerability could be exploited  |
+|            |                             |               |                         | if an application allows user input, thereby enabling        |
+|            |                             |               |                         | attackers to execute arbitrary code on the system.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-27533   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-27538      | curl          | 7.74.0-1.3+deb11u7      | An authentication bypass vulnerability exists in libcurl     |
+|            |                             |               |                         | prior to v8.0.0 where it reuses a previously established SSH |
+|            |                             |               |                         | connection despite the fact that an SSH option was modified, |
+|            |                             |               |                         | which should have prevented reuse. libcurl maintains a       |
+|            |                             |               |                         | pool of previously used connections to reuse them for        |
+|            |                             |               |                         | subsequent transfers if the configurations match. However,   |
+|            |                             |               |                         | two SSH settings were omitted from the configuration         |
+|            |                             |               |                         | check, allowing them to match easily, potentially            |
+|            |                             |               |                         | leading to the reuse of an inappropriate connection.         |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-27538   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-27535      | curl          | 7.74.0-1.3+deb11u7      | An authentication bypass vulnerability exists in             |
+|            |                             |               |                         | libcurl <8.0.0 in the FTP connection reuse feature           |
+|            |                             |               |                         | that can result in wrong credentials being used during       |
+|            |                             |               |                         | subsequent transfers. Previously created connections         |
+|            |                             |               |                         | are kept in a connection pool for reuse if they match        |
+|            |                             |               |                         | the current setup. However, certain FTP settings such        |
+|            |                             |               |                         | as CURLOPT_FTP_ACCOUNT, CURLOPT_FTP_ALTERNATIVE_TO_USER,     |
+|            |                             |               |                         | CURLOPT_FTP_SSL_CCC, and CURLOPT_USE_SSL were not included   |
+|            |                             |               |                         | in the configuration match checks, causing them to match     |
+|            |                             |               |                         | too easily. This could lead to libcurl using the wrong       |
+|            |                             |               |                         | credentials when performing a transfer, potentially          |
+|            |                             |               |                         | allowing unauthorized access to sensitive information.       |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-27535   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-27536      | curl          | 7.74.0-1.3+deb11u7      | An authentication bypass vulnerability exists libcurl        |
+|            |                             |               |                         | <8.0.0 in the connection reuse feature which can reuse       |
+|            |                             |               |                         | previously established connections with incorrect user       |
+|            |                             |               |                         | permissions due to a failure to check for changes in         |
+|            |                             |               |                         | the CURLOPT_GSSAPI_DELEGATION option. This vulnerability     |
+|            |                             |               |                         | affects krb5/kerberos/negotiate/GSSAPI transfers and could   |
+|            |                             |               |                         | potentially result in unauthorized access to sensitive       |
+|            |                             |               |                         | information. The safest option is to not reuse connections   |
+|            |                             |               |                         | if the CURLOPT_GSSAPI_DELEGATION option has been changed.    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-27536   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-31484      | perl          | 5.32.1-4+deb11u2        | CPAN.pm before 2.35 does not verify TLS certificates         |
+|            |                             |               |                         | when downloading distributions over HTTPS.                   |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-31484   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-2953       | openldap      | 2.4.57+dfsg-3+deb11u1   | A vulnerability was found in openldap.                       |
+|            |                             |               |                         | This security flaw causes a null pointer                     |
+|            |                             |               |                         | dereference in ber_memalloc_x() function.                    |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-2953    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-29383      | shadow        | 1:4.8.1-1               | In Shadow 4.13, it is possible to inject control             |
+|            |                             |               |                         | characters into fields provided to the SUID program          |
+|            |                             |               |                         | chfn (change finger). Although it is not possible to         |
+|            |                             |               |                         | exploit this directly (e.g., adding a new user fails         |
+|            |                             |               |                         | because \n is in the block list), it is possible to          |
+|            |                             |               |                         | misrepresent the /etc/passwd file when viewed. Use of        |
+|            |                             |               |                         | \r manipulations and Unicode characters to work around       |
+|            |                             |               |                         | blocking of the : character make it possible to give         |
+|            |                             |               |                         | the impression that a new user has been added. In other      |
+|            |                             |               |                         | words, an adversary may be able to convince a system         |
+|            |                             |               |                         | administrator to take the system offline (an indirect,       |
+|            |                             |               |                         | social-engineered denial of service) by demonstrating        |
+|            |                             |               |                         | that "cat /etc/passwd" shows a rogue user account.           |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-29383   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2016-3709       | libxml2       | 2.9.10+dfsg-6.7+deb11u4 | Possible cross-site scripting vulnerability                  |
+|            |                             |               |                         | in libxml after commit 960f0e2.                              |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2016-3709    |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
+| [1;31mUnapproved[0m | Unknown CVE-2023-29491      | ncurses       | 6.2+20201114-2+deb11u1  | ncurses before 6.4 20230408, when used by a setuid           |
+|            |                             |               |                         | application, allows local users to trigger security-relevant |
+|            |                             |               |                         | memory corruption via malformed data in a terminfo           |
+|            |                             |               |                         | database file that is found in $HOME/.terminfo or            |
+|            |                             |               |                         | reached via the TERMINFO or TERM environment variable.       |
+|            |                             |               |                         | https://security-tracker.debian.org/tracker/CVE-2023-29491   |
++------------+-----------------------------+---------------+-------------------------+--------------------------------------------------------------+
