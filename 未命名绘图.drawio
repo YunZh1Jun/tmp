@@ -1,35 +1,35 @@
-<mxfile host="app.diagrams.net" modified="2023-08-21T10:10:28.836Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="hbDDCQOWys6eiDjziZZ4" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-21T10:12:12.523Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="oq8zhFWLGm07Ff5UdsJv" version="21.6.8" type="github">
   <diagram name="Page-1" id="1622d65d-c77d-c4b6-e0e7-3c11208c8684">
     <mxGraphModel dx="2394" dy="1329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
         <mxCell id="869962fe87da545-3" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;dashed=0;strokeWidth=1;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;strokeColor=none;fillColor=#7FB61A;gradientColor=#1B622A;gradientDirection=west;" parent="1" vertex="1">
-          <mxGeometry x="1503.5" y="210" width="250" height="180" as="geometry" />
+          <mxGeometry x="1503.5" y="210" width="376.5" height="180" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-4" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;shape=mxgraph.basic.orthogonal_triangle;rounded=0;shadow=0;dashed=0;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;flipV=1;fillColor=#000000;strokeColor=none;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="1501" y="350" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-6" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;dashed=0;strokeWidth=1;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;strokeColor=none;fillColor=#5398DB;gradientColor=#1247B9;gradientDirection=west;" parent="1" vertex="1">
-          <mxGeometry x="1513.5" y="440" width="240" height="180" as="geometry" />
+          <mxGeometry x="1513.5" y="440" width="366.5" height="180" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-7" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;shape=mxgraph.basic.orthogonal_triangle;rounded=0;shadow=0;dashed=0;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;flipV=1;fillColor=#000000;strokeColor=none;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="1513.5" y="580" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-9" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;dashed=0;strokeWidth=1;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;strokeColor=none;fillColor=#8D029D;gradientColor=#65009E;gradientDirection=west;" parent="1" vertex="1">
-          <mxGeometry x="1513.5" y="670" width="240" height="180" as="geometry" />
+          <mxGeometry x="1513.5" y="670" width="366.5" height="180" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-10" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;shape=mxgraph.basic.orthogonal_triangle;rounded=0;shadow=0;dashed=0;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;flipV=1;fillColor=#000000;strokeColor=none;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="1513.5" y="810" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-12" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;dashed=0;strokeWidth=1;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;strokeColor=none;fillColor=#F19001;gradientColor=#C23603;gradientDirection=west;" parent="1" vertex="1">
-          <mxGeometry x="1503.5" y="900" width="240" height="180" as="geometry" />
+          <mxGeometry x="1503.5" y="900" width="376.5" height="180" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-13" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;shape=mxgraph.basic.orthogonal_triangle;rounded=0;shadow=0;dashed=0;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;flipV=1;fillColor=#000000;strokeColor=none;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="1503.5" y="1040" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-15" value="" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;dashed=0;strokeWidth=1;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;strokeColor=none;fillColor=#EA0001;gradientColor=#AD0002;gradientDirection=west;" parent="1" vertex="1">
-          <mxGeometry x="1503.5" y="1130" width="240" height="180" as="geometry" />
+          <mxGeometry x="1503.5" y="1130" width="376.5" height="180" as="geometry" />
         </mxCell>
         <mxCell id="869962fe87da545-16" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;shape=mxgraph.basic.orthogonal_triangle;rounded=0;shadow=0;dashed=0;fontFamily=Tahoma;fontSize=10;fontColor=#FFFFFF;flipV=1;fillColor=#000000;strokeColor=none;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="1503.5" y="1270" width="140" height="40" as="geometry" />
@@ -79,7 +79,7 @@
         <mxCell id="869962fe87da545-28" value="" style="line;strokeWidth=4;direction=south;html=1;rounded=0;shadow=0;dashed=0;fillColor=none;gradientColor=#AD0002;fontFamily=Helvetica;fontSize=150;fontColor=#FFFFFF;align=right;strokeColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="250" y="1100" width="10" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="869962fe87da545-29" value="&lt;h1&gt;&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;&quot;&gt;&lt;span style=&quot;font-size: 36px;&quot;&gt;技术分析&lt;/span&gt;&lt;/p&gt;&lt;/h1&gt;&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal; font-size: 26px;&quot;&gt;学习相关的技术博客，分析开源组件源码，阅读GPT发展相关论文。结合容器漏洞安全扫描技术，初步构思可行的集成落地方案，探索与GPT的结合点，输出自己的技术观点。&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;shadow=0;dashed=0;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;align=left;" parent="1" vertex="1">
+        <mxCell id="869962fe87da545-29" value="&lt;h1&gt;&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;&quot;&gt;&lt;font style=&quot;font-size: 40px;&quot;&gt;技术分析&lt;/font&gt;&lt;/p&gt;&lt;/h1&gt;&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;学习相关的技术博客，分析开源组件源码，阅读GPT发展相关论文。结合容器漏洞安全扫描技术，初步构思可行的集成落地方案，探索与GPT的结合点，输出自己的技术观点。&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;shadow=0;dashed=0;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;align=left;" parent="1" vertex="1">
           <mxGeometry x="285" y="650" width="1295" height="140" as="geometry" />
         </mxCell>
         <mxCell id="z2sBM01HuCee_LpHHiXx-1" value="&lt;h1&gt;&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;&quot;&gt;&lt;font style=&quot;font-size: 40px;&quot;&gt;测试数据&lt;/font&gt;&lt;/p&gt;&lt;/h1&gt;&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal; font-size: 30px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;测试各个组件的漏洞扫描情况，对比各个组件扫描漏洞的报告，并根据报告结果人工验证每一个漏洞的正确性。&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;div style=&quot;font-size: 30px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;shadow=0;dashed=0;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;align=left;" parent="1" vertex="1">
