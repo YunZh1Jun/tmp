@@ -7,9 +7,32 @@
     "id": 0
   },
   "detail": {
-    "contributors": [],
-    "diagrams": [],
-    "diagramTop": 0,
+    "contributors": [
+      {
+        "name": "y"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "新STRIDE图",
+        "diagramType": "STRIDE",
+        "placeholder": "新STRIDE图描述",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.1.2",
+        "cells": []
+      },
+      {
+        "id": 1,
+        "title": "新STRIDE图",
+        "diagramType": "STRIDE",
+        "placeholder": "新STRIDE图描述",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.1.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
     "reviewer": "",
     "threatTop": 0
   }
